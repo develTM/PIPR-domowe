@@ -1,7 +1,6 @@
 
 def full_row(width):
-    for i in range(width): print('*', end='')
-    print('')
+    print(width *'*')
 
 def two_dot_row(width):
     for i in range(width):
