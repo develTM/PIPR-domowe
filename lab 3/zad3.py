@@ -1,3 +1,4 @@
+
 def hashtag_rectangle(height, width):
     for i in range(height): print('#'* width)
 

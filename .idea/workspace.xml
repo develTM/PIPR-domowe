@@ -20,12 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a1cb52b8-5464-41ca-9a3c-86f8d06ee80e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/zadania domowe.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab 3/zad1.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab 3/zad1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab 3/zad2.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab 3/zad2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lab 3/zad3.py" beforeDir="false" afterPath="$PROJECT_DIR$/lab 3/zad3.py" afterDir="false" />
@@ -47,7 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lab 3/zad1.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/main.py" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
@@ -71,7 +66,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="swap_for_current" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="mian" type="PythonConfigurationType" factoryName="Python">
       <module name="zadania domowe" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,11 +74,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab 3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab 3/zad2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="true" />
@@ -93,6 +88,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -119,29 +115,41 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="179" y="288" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603988119363">
+    <state x="525" y="566" key="#Notifications" timestamp="1603989865052">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="179" y="288" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1603988119363" />
-    <state x="505" y="388" key="FileChooserDialogImpl" timestamp="1603888256607">
+    <state x="525" y="566" key="#Notifications/0.0.2560.1400@0.0.2560.1400" timestamp="1603989865052" />
+    <state x="179" y="288" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1604522455967">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="505" y="388" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1603888256607" />
-    <state width="2539" height="391" key="GridCell.Tab.0.bottom" timestamp="1603989289300">
+    <state x="179" y="288" width="1092" height="714" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1604522455967" />
+    <state x="565" y="395" width="440" height="514" key="FileChooserDialogImpl" timestamp="1604522454568">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="391" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1603989289300" />
-    <state width="2539" height="391" key="GridCell.Tab.0.center" timestamp="1603989289300">
+    <state x="565" y="395" width="440" height="514" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1604522454568" />
+    <state width="1256" height="390" key="GridCell.Tab.0.bottom" timestamp="1604527362601">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="391" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1603989289300" />
-    <state width="2539" height="391" key="GridCell.Tab.0.left" timestamp="1603989289300">
+    <state width="1256" height="390" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1604527362601" />
+    <state width="1256" height="390" key="GridCell.Tab.0.center" timestamp="1604527362601">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="391" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1603989289300" />
-    <state width="2539" height="391" key="GridCell.Tab.0.right" timestamp="1603989289300">
+    <state width="1256" height="390" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1604527362601" />
+    <state width="1256" height="390" key="GridCell.Tab.0.left" timestamp="1604527362601">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2539" height="391" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1603989289300" />
+    <state width="1256" height="390" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1604527362601" />
+    <state width="1256" height="390" key="GridCell.Tab.0.right" timestamp="1604527362601">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1256" height="390" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1604527362601" />
+    <state x="0" y="0" width="1872" height="1387" key="dock-window-1" timestamp="1604522785372">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="0" y="0" width="1872" height="1387" key="dock-window-1/0.0.2560.1400@0.0.2560.1400" timestamp="1604522785372" />
+    <state x="1583" y="320" key="search.everywhere.popup" timestamp="1604525702287">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1583" y="320" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1604525702287" />
   </component>
 </project>

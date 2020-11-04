@@ -28,4 +28,16 @@ def highlight(what, width):
     two_dot_row(width)
     full_row(width)
 
-highlight('TV TRFAM', 20)
+#highlight('TV TRFAM', 20)
+
+def fun(p1,p2):
+    print('{:*>{size}}'.format("",size=p2))
+    print('*'+':{size}}'.format("",size=p2-2)+'*')
+    print('*'+'{:^{size}}'.format(p1,size=p2-2)+'*')
+    print('*'+'{:{size}}'.format("",size=p2-2)+'*')
+    print('{:*>{size}}'.format("",size=p2))
+
+#fun("Hello",12)
+
+
+print('{:*<{size}}'.format('slowo',size=10))

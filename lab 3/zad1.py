@@ -7,5 +7,4 @@ def merge_segments(x, y):
     return x[0], min(x[1], y[1])
 
 print(merge_segments((3,4),(1, 6)))
-#print(merge_segments((1,2),(2,0)))
 
