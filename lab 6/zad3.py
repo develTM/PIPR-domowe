@@ -20,5 +20,3 @@ def laborki(punktacja, studenci):
         else:
             suma_studencka_proc.append(None)
     return list(zip([student[0] for student in studenci], suma_studencka, suma_studencka_proc)), round(suma_global/liczba_studentow * 100 / sum(punktacja), 1)
-
-print(laborki([10, 20, 30, 40],[("Adam Abacki", [5, 10, 15]), ("Basia Babacka", [10, 20, 30]), ("Cecylia Cabacka", [1, 2, 3])]))
