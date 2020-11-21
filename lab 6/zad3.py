@@ -5,7 +5,7 @@ def laborki(punktacja, studenci):
     suma_global = 0
     liczba_studentow = 0
     for student in studenci:
-        if isinstance(student[1], int or float):
+        if not isinstance(student[1], list):
             suma_studencka.append(None)
             continue
         if False in [isinstance(element, (int, float)) for element in student[1]]:
