@@ -23,14 +23,24 @@ def test_proper():
 def test_proper_with_leaps():
     assert max_subarray([3,-2,5,-1,0,4,-8,7,0]) == [3, -2, 5, -1, 0, 4]
 
-from main import *
+
 
 #zad 2 vigenere cypher
 def test_encryption():
     assert encrypt_vigenere('NT OJES TBARDZ OTAJN YTEKS', 'TO JEST BARDZO TAJNY TEKST') == 'GH XNWL UBRUCN HTJWL RXOCL'
 
+def test_shortKey():
+    with pytest.raises(Exception):
+        encrypt_vigenere('FDFD', 'DFAFASVAKSDGFJKAGSJVJAGV')
+
+def test_badChar():
+    with pytest.raises(Exception):
+        encrypt_vigenere('NT OJES TBArDZ OTaJN YTEKS', 'TO JEST BARDZO TAJNY TEKST')
+
 def test_decryption():
     assert decrypt_vigenere('NT OJES TBARDZ OTAJN YTEKS', 'GH XNWL UBRUCN HTJWL RXOCL') == 'TO JEST BARDZO TAJNY TEKST'
+
+
 
 #zad 3
 def test_laborki_A():
@@ -39,5 +49,11 @@ def test_laborki_A():
 def test_laborki_corrupt():
     assert laborki([10, 20, 30],[("Adam Abacki", [5, '1o', 15]), ("Basia Babacka", [10, 20, 30]), ("Cecylia Cabacka", 55)]) == ([("Adam Abacki", None, None), ("Basia Babacka", 60, 100), ("Cecylia Cabacka", None, None)], 100)
 
+def test_laborki_elita():
+    assert laborki([10, 20, 30, 88],[("Hakerman", [10, 44, 3340,123, 4, 4])]) == ([('Hakerman', 3525, 2381.8)], 2381.8)
 
-# wynik
+
+
+
+# poprawić zadanie 3, dodać jeszcze 1 test
+# napisać testy do zad 2, dla wyjątkow

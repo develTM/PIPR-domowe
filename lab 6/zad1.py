@@ -1,9 +1,8 @@
 
-
 def max_subarray(numbers):
     good = False
     for i in numbers:
-        if i>0:
+        if i > 0:
             good = True
     if not good:
         return None
@@ -20,6 +19,6 @@ def max_subarray(numbers):
         if current_sum > best_sum:
             best_sum = current_sum
             best_start = current_start
-            best_end = current_end + 1  # the +1 is to make 'best_end' exclusive
+            best_end = current_end + 1
 
     return numbers[best_start:best_end]
