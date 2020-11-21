@@ -3,6 +3,7 @@ from zad1 import max_subarray
 from zad2 import encrypt_vigenere, decrypt_vigenere
 from zad3 import laborki
 
+
 #zad 1 kadane
 def test_empty():
     assert max_subarray([]) == None
@@ -51,9 +52,3 @@ def test_laborki_corrupt():
 
 def test_laborki_elita():
     assert laborki([10, 20, 30, 88],[("Hakerman", [10, 44, 3340,123, 4, 4])]) == ([('Hakerman', 3525, 2381.8)], 2381.8)
-
-
-
-
-# poprawić zadanie 3, dodać jeszcze 1 test
-# napisać testy do zad 2, dla wyjątkow
