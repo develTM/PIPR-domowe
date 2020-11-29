@@ -40,6 +40,8 @@ class Trasa():
         time = 0
         for pozycja in self._pozycje:
             time += pozycja.getprzystanek().czas_postoju() + pozycja.czas_dojazdu()
+            print(pozycja.getprzystanek().czas_postoju() + pozycja.czas_dojazdu())
+        print(time)
         return time
 
     def add_time(self, time, interval):
@@ -55,13 +57,13 @@ class Trasa():
 
     def generuj_rozklad(self, czas):
         czas = list(czas)
-        czas_odjazdu = self.add_time(czas, self.total_time())
+        czas_odjazdu = czas
+        koniec = self.add_time(czas, self.total_time())
         print(self.getname())
-        print(self.time_str(czas), '-', self.time_str(czas_odjazdu))
+        print(self.time_str(czas), '-', self.time_str(koniec))
         for pozycja in self._pozycje:
-            czas_przyjazdu = self.add_time(czas, pozycja.czas_dojazdu())
-            czas = czas_przyjazdu
-            czas_odjazdu = self.add_time(czas, pozycja.getprzystanek().czas_postoju())
+            czas_przyjazdu = self.add_time(czas_odjazdu, pozycja.czas_dojazdu())
+            czas_odjazdu = self.add_time(czas_przyjazdu, pozycja.getprzystanek().czas_postoju())
             print(pozycja.getprzystanek().getname(),self.time_str(czas_przyjazdu),'-', self.time_str(czas_odjazdu), pozycja.getprzystanek()._przesiadka)
 
 
@@ -69,10 +71,10 @@ zajezdnia = ('Stajnia choszczowka', False, 0)
 rondo = ('rondo Dawida', True, 2)
 warszawska = ('Warszawska', False, 2)
 mickiewicza = ('Adama Mickiewicza', False, 2)
-reymonta = ('Reymonta', False, 1)
-belwederska = ('Belwederska', True, 2)
-pętla = ('Rondo ptak', False, 5)
+reymonta = ('Reymonta', False, 2)
+belwederska = ('Belwederska', True, 1)
+pętla = ('Rondo ptak', False, 13)
 
-pozycje = [(zajezdnia, 0), (rondo, 4), (warszawska, 6), (mickiewicza, 10), (reymonta, 8), (belwederska, 10), (pętla, 10)]
+pozycje = [(zajezdnia, 0), (rondo, 5), (warszawska, 5), (mickiewicza, 5), (reymonta, 4), (belwederska, 10), (pętla, 10)]
 trasa_N01 = Trasa('N01', pozycje)
 trasa_N01.generuj_rozklad((23, 48))
