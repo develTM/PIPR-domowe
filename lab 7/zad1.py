@@ -90,6 +90,9 @@ class Polynomial():
                 return element[1]
         raise Exception(ValueError)
 
+    def degree(self):
+        return max([i[0] for i in self.polynomial])
+
     def value(self, x):
         suma = 0
         for element in self.polynomial:
@@ -98,9 +101,11 @@ class Polynomial():
 
 polynomial = Polynomial([(0, 4), (1, 2), (6, 6)])
 #print(polynomial.__str__())
-polynomial.add([(1, 1), (6, 6), (7, 7), (100, 100), (10, 10)])
+polynomial.add([(1, 1), (6, 6), (7, 7), (200, 100), (10, 10)])
 polynomial.substract([(0, 4), (1, 3)])
 
 print(polynomial.__str__())
 
 print(polynomial.value(4))
+
+print(polynomial.degree())
